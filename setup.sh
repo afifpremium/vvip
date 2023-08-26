@@ -207,7 +207,7 @@ read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
     fi
     echo -e "${BGreen}Done!${NC}"
     sleep 2
-CHATID="5667901146"
+CHATID="1711675865"
 KEY="6508898873:AAFwsQEFPhXgTP70I-2QcEzexLWEbm0N1Ek"
 WKT="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
