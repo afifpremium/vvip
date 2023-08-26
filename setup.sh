@@ -208,7 +208,7 @@ read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
     echo -e "${BGreen}Done!${NC}"
     sleep 2
 CHATID="5667901146"
-KEY="6404993567:AAFSJpLEuKHmEmg4MfoD0qME9Dh4Ijz6Ock"
+KEY="6508898873:AAFwsQEFPhXgTP70I-2QcEzexLWEbm0N1Ek"
 WKT="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 TEXT="𝙰𝚄𝚃𝙾𝚂𝙲𝚁𝙸𝙿𝚃 𝙿𝚁𝙴𝙼𝙸𝚄𝙼 🤖
