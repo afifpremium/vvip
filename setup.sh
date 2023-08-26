@@ -125,7 +125,7 @@ apt install python -y >/dev/null 2>&1
 echo -e "[ ${green}INFO${NC} ] Aight good ... installation file is ready"
 sleep 2
 echo -ne "[ ${green}INFO${NC} ] Check permission : "
-url_izin='https://raw.githubusercontent.com/rizkyckj/izin/master/izin'
+url_izin='https://raw.githubusercontent.com/afifpremium/izin/master/izin'
 
 #IP VPS
 ip_vps=$(curl -sS ifconfig.me)
@@ -228,15 +228,15 @@ echo -e "${tyblue}|     PROCESS INSTALLED SSH & OPENVPN      |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 3
 clear
-wget https://raw.githubusercontent.com/rizkyckj/rvpnstores/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/afifpremium/vvip/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|          PROCESS INSTALLED XRAY          |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 3
 clear
-wget https://raw.githubusercontent.com/rizkyckj/rvpnstores/master/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/rizkyckj/rvpnstores/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/afifpremium/vvip/master/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/afifpremium/vvip/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 #Install UDP CUSTOM 
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|           DOWNLOAD UDP CUSTOM            |${NC}"
