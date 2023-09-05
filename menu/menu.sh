@@ -192,8 +192,8 @@ echo -e "${COLOR1}    STUNNEL ${NC}: $ressh" "${COLOR1} DROPBEAR ${NC}: $resdbr"
 
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "   ${WH}SSHWS ${WH}[${COLOR1}${ssh1}${WH}]  ${WH}VLESS ${WH}[${COLOR1}${vlx}${WH}]  ${WH}VMESS ${WH}[${COLOR1}${vms}${WH}]
-echo -e "   ${WH}TROJAN ${WH}[${COLOR1}${trx}${WH}]  ${WH}SSWS ${WH}[${COLOR1}${ssx}${WH}]
 echo -e "$COLOR1└───────────────────────────────────────────────────┘${NC}"
+
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "  ${WH}[${COLOR1}01${WH}]${NC} ${y}• ${WH}SSHWS         ${WH}[${COLOR1}07${WH}]${NC} ${Lred}• ${WH}SYSTEM  ${WH}[${COLOR1}ᴍᴇɴᴜ${WH}]  $COLOR1 $NC"
 echo -e "  ${WH}[${COLOR1}02${WH}]${NC} ${y}• ${WH}VLESS         ${WH}[${COLOR1}08${WH}]${NC} ${Lred}• ${WH}UPDATE  ${WH}[${COLOR1}ᴍᴇɴᴜ${WH}]  $COLOR1 $NC"  
