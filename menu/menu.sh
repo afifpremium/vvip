@@ -189,6 +189,7 @@ echo -e "${COLOR1}│${NC} ☞ 𝙾𝚁𝙳𝙴𝚁 𝙱𝚈            = $nama 
 echo -e "${COLOR1}└─────────────────────────────────────────────────\033[0m${NC}"
 echo -e "${COLOR1}SSH ${NC}: $ressh"" ${COLOR1} NGINX ${NC}: $resngx"" ${COLOR1}  XRAY ${NC}: $resv2r"" ${COLOR1} TROJAN ${NC}: $resv2r"
 echo -e "${COLOR1}    STUNNEL ${NC}: $ressh" "${COLOR1} DROPBEAR ${NC}: $resdbr" "${COLOR1} UDP-CUSTOM ${NC}: $resv2r" 
+
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e " ${WH}[${COLOR1}01${WH}]${NC} ${y}• ${WH}SSHWS         ${WH}[${COLOR1}07${WH}]${NC} ${Lred}• ${WH}SYSTEM  ${WH}[${COLOR1}ᴍᴇɴᴜ${WH}]  $COLOR1 $NC"
 echo -e " ${WH}[${COLOR1}02${WH}]${NC} ${y}• ${WH}VLESS         ${WH}[${COLOR1}08${WH}]${NC} ${Lred}• ${WH}UPDATE  ${WH}[${COLOR1}ᴍᴇɴᴜ${WH}]  $COLOR1 $NC"  
