@@ -188,7 +188,7 @@ echo -e "${COLOR1}│${NC} ☞ 𝚁𝙰𝙼                 = $uram MB / $tram M
 echo -e "${COLOR1}│${NC} ☞ 𝙾𝚁𝙳𝙴𝚁 𝙱𝚈            = $nama $tanggal"
 echo -e "${COLOR1}└─────────────────────────────────────────────────\033[0m${NC}"
 echo -e "$COLOR1┌──────────────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} [ SSH WS   : $status wst" ]    [ XRAY : $status xray" ]      [ NGINX : $status_nginx" ]   $COLOR1│$NC"
+echo -e "$COLOR1│${NC} [ SSH WS   : $status wst ]    [ XRAY : $status xray ]      [ NGINX : $status_nginx ]   $COLOR1│$NC"
 echo -e "$COLOR1│${NC}                                                          $COLOR1│$NC"
 echo -e "$COLOR1│${NC} [ SW-SHOCK : ${status_xray} ]    [ DROPBEAR : ${status_dropbear} ]  [ Slow DNS : ${status_sldns} ]$COLOR1│$NC"
 echo -e "$COLOR1│${NC}                                                          $COLOR1│$NC"
