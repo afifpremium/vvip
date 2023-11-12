@@ -176,22 +176,38 @@ tram=$( free -m | awk 'NR==2 {print $2}' )
 uram=$( free -m | awk 'NR==2 {print $3}' )
 fram=$( free -m | awk 'NR==2 {print $4}' )
 clear 
-echo -e "┌────────────────────────────────────────────────┐\033[0m${NC}"
-echo -e "${COLOR1}|\\E[40;1;37m      SCRIPT MULTIPORT BY AKTVPM   \E[0m"
-echo -e "${COLOR1}│────────────────────────────────────────────────┘\033[0m${NC}"
-echo -e "${COLOR1}│${NC} ☞ 𝙾𝚂                  = "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`
-echo -e "${COLOR1}│${NC} ☞ 𝚃𝙸𝙼𝙴                = $( date -d "0 days" +"%d-%m-%Y | %X" )"
-echo -e "${COLOR1}│${NC} ☞ 𝙳𝙾𝙼𝙰𝙸𝙽              = $( cat /etc/xray/domain )"
-echo -e "${COLOR1}│${NC} ☞ 𝙸𝙿 𝚅𝙿𝚂              = $ip_vps"
-echo -e "${COLOR1}│${NC} ☞ 𝙸𝚂𝙿 𝚂𝙴𝚁𝚅𝙴𝚁          = $(wget -qO- ipinfo.io/org )" 
-echo -e "${COLOR1}│${NC} ☞ 𝚁𝙰𝙼                 = $uram MB / $tram MB"
-echo -e "${COLOR1}│${NC} ☞ 𝙾𝚁𝙳𝙴𝚁 𝙱𝚈            = $nama $tanggal"
-echo -e "${COLOR1}└─────────────────────────────────────────────────\033[0m${NC}"
+echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1│${NC} ${COLBG1}               • VPS PANEL MENU •              ${NC} $COLOR1│$NC"
+echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1 <<────────────────────────────────────────────────────>>${NC}"
+uphours=`uptime -p | awk '{print $2,$3}' | cut -d , -f1`
+upminutes=`uptime -p | awk '{print $4,$5}' | cut -d , -f1`
+uptimecek=`uptime -p | awk '{print $6,$7}' | cut -d , -f1`
+cekup=`uptime -p | grep -ow "day"`
+IPVPS=$(curl -s ipinfo.io/ip )
+serverV=$(curl -sS https://raw.githubusercontent.com/hokagelegend2023/ijinpremium/main/versi)
+if [ "$Isadmin" = "ON" ]; then
+uis="${GREEN}Premium User$NC"
+else
+uis="${RED}Free Version$NC"
+fi
+echo -e "$COLOR1  $NC User Roles     : $uis    "
+if [ "$cekup" = "day" ]; then
+echo -e "$COLOR1  $NC System Uptime  : $uphours $upminutes $uptimecek           "
+else
+echo -e "$COLOR1  $NC System Uptime  : $uphours $upminutes                       "
+fi
+echo -e "$COLOR1  $NC Memory Usage   : $uram / $tram                        "
+echo -e "$COLOR1  $NC ISP            : $ISP  "
+echo -e "$COLOR1  $NC City           : $CITY                        "
+echo -e "$COLOR1  $NC Current Domain : $(cat /etc/xray/domain)          "
+echo -e "$COLOR1  $NC IP-VPS         : ${COLOR1}$IPVPS${NC}         "
+echo -e "$COLOR1 <<─────────────────────────────────────────────────────>>${NC}"
 echo -e "$COLOR1┌──────────────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} [ SSH WS   : $status wst ]    [ XRAY : $status xray ]      [ NGINX : $status_nginx ]   $COLOR1│$NC"
-echo -e "$COLOR1│${NC}                                                          $COLOR1│$NC"
-echo -e "$COLOR1│${NC} [ SW-SHOCK : ${status_xray} ]    [ DROPBEAR : ${status_dropbear} ]  [ Slow DNS : ${status_sldns} ]$COLOR1│$NC"
-echo -e "$COLOR1│${NC}                                                          $COLOR1│$NC"
+echo -e "$COLOR1│$NC [ SSH WS   : ${status_wst} ]    [ XRAY : ${status_xray} ]      [ NGINX : ${status_nginx} ]   $COLOR1│$NC"
+echo -e "$COLOR1│$NC                                                          $COLOR1│$NC"
+echo -e "$COLOR1│$NC [ SW-SHOCK : ${status_xray} ]    [ DROPBEAR : ${status_dropbear} ]  [ Slow DNS : ${status_sldns} ]$COLOR1│$NC"
+echo -e "$COLOR1│$NC                                                          $COLOR1│$NC"
 echo -e "$COLOR1│$NC [ UDP-COSTUM : ${status_udp} ]  [ GRPC : ${status_xray} ]      [ PPTP : ${status_pptp} ]    $COLOR1│$NC"
 echo -e "$COLOR1│$NC                                                          $COLOR1│$NC"
 echo -e "$COLOR1│$NC [ L2TP : ${status_l2tp} ]        [ WIREGUARD : ${status_sstp} ] [ SSTP : ${status_sstp} ]    $COLOR1│$NC"
